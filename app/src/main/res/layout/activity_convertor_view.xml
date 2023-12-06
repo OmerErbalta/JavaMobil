@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConvertorView">
+
+    <RadioButton
+        android:id="@+id/KelvinRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="11dp"
+        android:text="Kelvin"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/fahrenaytRadio" />
+
+    <EditText
+        android:id="@+id/celciusInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Input Text"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="26dp"
+        android:text="Celcius"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/byteInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Input Text"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/byteSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/byteSpinner"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <Spinner
+        android:id="@+id/byteSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="21dp"
+        android:text="Byte"
+        app:layout_constraintBottom_toTopOf="@+id/byteSpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/byteResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="21dp"
+        android:text="Sonuç:"
+        app:layout_constraintStart_toStartOf="@+id/byteSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/byteSpinner" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="57dp"
+        android:text="Decimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/decimalInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:hint="Input Text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/decimalSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/decimalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sonuç:"
+        app:layout_constraintEnd_toEndOf="@+id/byteResult"
+        app:layout_constraintStart_toStartOf="@+id/byteResult"
+        app:layout_constraintTop_toBottomOf="@+id/decimalSpinner" />
+
+    <TextView
+        android:id="@+id/CelciusResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:text="Sonuç:"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioButton
+        android:id="@+id/fahrenaytRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="Fahrenayt"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="294dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/KelvinRadio"
+        app:layout_constraintStart_toStartOf="@+id/KelvinRadio"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
